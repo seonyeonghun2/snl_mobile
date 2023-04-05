@@ -90,6 +90,76 @@ body {
     margin: 20px 0;
 }
 
+.form_title {
+    max-width: 1190px;
+    margin: 50px auto;
+    padding: 20px 0;
+    background-color: #006FFF;  /* 배경색상 */
+    color: white;               /* 글자색상 */
+    text-align: center;           /* 가로 가운데 정렬 */
+}
+/* login form style */
+form, fieldset {
+    border: 0
+}
+form { /* mvp.css에서 form의 가로 크기를 제한함으로 이를 해결하기 위한 스타일 */
+    width: 100%;
+    max-width: 100%;
+}
+legend {
+    display: none;
+}
+.form_wrap {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.w-800 {
+    max-width: 800px;
+}
+.d-flex { /* 표시: 가로로 나란히 배치하는 클래스 */
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.d-flex label {
+    text-align: right;
+    margin-right: 1rem;
+    flex: 2
+}
+.d-flex input {
+    flex: 8;
+    padding: 1rem 0
+}
+.flex-8 {
+    flex: 8
+}
+
+.d-flex > div { /* 자손 선택자 : 직계 (아들,딸 선택자) */
+    margin-left: 75px;
+}
+[type=submit], [type=reset] { /* 속성 선택자 : <button type="submit">..</button>  : button 태그, type 속성, submit : 값 */
+    padding: 5px 20px;
+}
+[type=reset] {
+    margin-left: 1rem;
+    border:2px solid #006FFF;
+    color: #006FFF;
+    background-color: transparent /* 투명 */
+}
+.divider {
+    margin: 1rem 0; /* 1rem = 16px , Root Element의 약자, 알엠, 알이엠, 렘*/
+}
+
+a, a:link {
+    color: #006FFF;
+}
 /* media query */
 @media screen and (max-width: 360px){
     #model {
