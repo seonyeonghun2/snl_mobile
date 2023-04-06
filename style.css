@@ -144,6 +144,10 @@ legend {
 .d-flex > div { /* 자손 선택자 : 직계 (아들,딸 선택자) */
     margin-left: 75px;
 }
+.d-flex > .ml-0 {
+    margin-left: 0;
+}
+
 [type=submit], [type=reset] { /* 속성 선택자 : <button type="submit">..</button>  : button 태그, type 속성, submit : 값 */
     padding: 5px 20px;
 }
@@ -160,6 +164,15 @@ legend {
 a, a:link {
     color: #006FFF;
 }
+
+[type=text], [type=password], [type=tel], [type=email] {
+    text-indent: 1rem;
+}
+#reg_agree { /* ID 선택자 : 문서 내에서 단 한번만 사용*/
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
 /* media query */
 @media screen and (max-width: 360px){
     #model {
