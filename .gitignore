@@ -1,0 +1,16 @@
+# figma 스케치는 제외한다
+*.fig
+/Figma
+
+# window과 폴더의 정보를 담는 .db 파일을 자동 생성
+*.db
+Thumbs.*
+
+# 각종 문서 파일
+*.hwp
+*.xlsx
+*.doc
+*.ppt
+*.pdf
+
+# 구글 > gitignore 자동 생성기 --> 활용하면, 더 쉽지않을까..
